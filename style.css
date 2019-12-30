@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50em 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.titulo-principal{
+    grid-column: 1 / 3;
+}
+.vidas-restantes{
+    grid-column: 2 / 3;
+    justify-self: start;
+    grid-row: 2 / 3;
+}
+.input-card{
+    justify-self: end;
+    margin-right: 1em;
+}
+.puntaje{
+    margin-top: 1em;
+}
+.input-card>div>h5{
+    
+    margin-bottom: 1em;
+    
+}
+.input-card>div>input{
+    margin-bottom: 1em;
+}
+.input-num{
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+}
+.final-result-aside{
+    grid-column: 1 / 3;
+}
+.win{
+    display: none;
+}
+.loose{
+    display: none;
+}
+@media (max-width: 600px) {
+    body{
+    grid-template-columns: 90vw;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    }
+    .vidas-restantes{
+        grid-row: 3 / 5;
+        grid-column: 1 / 2;
+        align-self: center;
+        justify-self: center;
+    }
+}
